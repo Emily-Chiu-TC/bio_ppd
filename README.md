@@ -3,7 +3,7 @@
 
 ## Team: 2023-2024
 Student Project Lead: Emily Chiu (Year 2 Biomedicine)  
-Volunteers: Freddie Marlowe (Year 1 Biomedicine), Kyle Costello (Year 2 Molecular Biology and Genetics), Katie Farrow (Year 3 Biomedicine), David Serban (Year 3 Biomedicine), Stella Babatope  
+Volunteers: Freddie Marlowe (Year 1 Biomedicine), Kyle Costello (Year 2 Molecular Biology and Genetics), Katie Farrow (Year 3 Biomedicine), David Serban (Year 3 Biomedicine) 
 With Support from the BIO Employability Director and the Faculty Professional Service
 
 ## Introduction
