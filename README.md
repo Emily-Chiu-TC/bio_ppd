@@ -1,7 +1,10 @@
-# UEA BIO Student PPD Club: Data Explorers
-(PPD: Personal and Professional Development)  
+# Data Explorers
+UEA BIO Student PPD Club
+* Personal and Professional Development
+* School of Biological Sciences
+* University of East Anglia
 
-## Team: 2023-2024
+## Team (2023-2024)
 Student Project Lead: Emily Chiu (Year 2 Biomedicine)  
 Volunteers: Freddie Marlowe (Year 1 Biomedicine), Kyle Costello (Year 2 Molecular Biology and Genetics), Katie Farrow (Year 3 Biomedicine), David Serban (Year 3 Biomedicine)  
 with support from the BIO School Director of Employability, Director of Engagement and the Faculty Professional Service
@@ -21,4 +24,4 @@ This project was developed by a team of Undergraduate Biology Students, with a m
   * Accessible colour palettes: derived from RStudio and Canva; courtesy of Katie
   * chart guides from <https://chart.guide/>
  
-Version: 11 June 2024 by Emily Chiu
+Version: 12 June 2024 by Emily Chiu
