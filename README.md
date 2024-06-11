@@ -3,7 +3,8 @@
 
 ## Team: 2023-2024
 Student Project Lead: Emily Chiu (Year 2 Biomedicine)  
-Volunteers: Freddie Marlowe (Year 1 Biomedicine), Kyle Costello (Year 2 Molecular Biology and Genetics), Katie Farrow (Year 3 Biomedicine), David Serban (Year 3 Biomedicine)
+Volunteers: Freddie Marlowe (Year 1 Biomedicine), Kyle Costello (Year 2 Molecular Biology and Genetics), Katie Farrow (Year 3 Biomedicine), David Serban (Year 3 Biomedicine), Stella Babatope
+With Support from the BIO Employability Director and the Faculty Professional Service
 
 ## Introduction
 This project has been inspired by the second-year module BIO-5023Y Data Science for Biologists organised by Dr. Philip Leftwich. Data is everywhere. Larger amounts of data are being generated more frequently. In the current age of information, the ability to generate appropriate insights from datasets is becoming an increasingly more important transferrable skill. 
@@ -16,7 +17,7 @@ This project was developed by a team of Undergraduate Biology Students, with a m
 * Marble Guess: Marbles of a known quantity were placed in a transparent container, with potential biases created by other materials; courtesy of Emily and Kyle
 * Resource Display:
   * Workbook: information on colour vision deficiency, nice data visualisation, and hands-on exercise for the younger audience; courtesy of Freddie, Kyle, Emily and Katie
-  * Leaflet: QR codes for signposting to other relevant online content; courtesy of Emily, Kyle and Katie
+  * Leaflet: QR codes for signposting to other relevant online content; courtesy of David and Emily
   * Accessible colour palettes: derived from RStudio and Canva; courtesy of Katie
   * chart guides from <https://chart.guide/>
  
