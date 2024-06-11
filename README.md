@@ -3,8 +3,8 @@
 
 ## Team: 2023-2024
 Student Project Lead: Emily Chiu (Year 2 Biomedicine)  
-Volunteers: Freddie Marlowe (Year 1 Biomedicine), Kyle Costello (Year 2 Molecular Biology and Genetics), Katie Farrow (Year 3 Biomedicine), David Serban (Year 3 Biomedicine) 
-With Support from the BIO Employability Director and the Faculty Professional Service
+Volunteers: Freddie Marlowe (Year 1 Biomedicine), Kyle Costello (Year 2 Molecular Biology and Genetics), Katie Farrow (Year 3 Biomedicine), David Serban (Year 3 Biomedicine)  
+with support from the BIO School Director of Employability, Director of Engagement and the Faculty Professional Service
 
 ## Introduction
 This project has been inspired by the second-year module BIO-5023Y Data Science for Biologists organised by Dr. Philip Leftwich. Data is everywhere. Larger amounts of data are being generated more frequently. In the current age of information, the ability to generate appropriate insights from datasets is becoming an increasingly more important transferrable skill. 
