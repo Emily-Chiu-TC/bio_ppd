@@ -1,6 +1,8 @@
 # UEA BIO Student PPD Club: Data Explorers
 (PPD: Personal and Professional Development)  
-Student Project Lead: Emily Chiu (Year 2 Biomedicine - 2023/2024)  
+
+## Team: 2023-2024
+Student Project Lead: Emily Chiu (Year 2 Biomedicine)  
 Volunteers: Freddie Marlowe (Year 1 Biomedicine), Kyle Costello (Year 2 Molecular Biology and Genetics), Katie Farrow (Year 3 Biomedicine), David Serban (Year 3 Biomedicine)
 
 ## Introduction
