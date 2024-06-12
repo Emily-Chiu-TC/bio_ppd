@@ -22,6 +22,6 @@ This project was developed by a team of Undergraduate Biology Students, with a m
   * Workbook: information on colour vision deficiency, nice data visualisation, and hands-on exercise for the younger audience; courtesy of Freddie, Kyle, Emily and Katie
   * Leaflet: QR codes for signposting to other relevant online content; courtesy of David and Emily
   * Accessible colour palettes: derived from RStudio and Canva; courtesy of Katie
-  * chart guides from <https://chart.guide/>
+  * Chart guides from <https://chart.guide/>
  
 Version: 12 June 2024 by Emily Chiu
