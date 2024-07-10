@@ -6,7 +6,7 @@ UEA BIO Student PPD Club
 
 ## Team (2023-2024)
 Student Project Lead: Emily Chiu (Year 2 Biomedicine)  
-Resource Team: Freddie Marlowe (Year 1 Biomedicine), Kyle Costello (Year 2 Molecular Biology and Genetics), Katie Farrow (Year 3 Biomedicine), David Serban (Year 3 Biomedicine)
+Resource Team: Freddie Marlowe (Year 1 Biomedicine), Kyle Costello (Year 2 Molecular Biology and Genetics), Katie Farrow (Year 3 Biomedicine), David Serban (Year 3 Biomedicine)  
 Event Volunteer: Alumni Stella Babatope (2023 MSc Molecular Medicine)
 with support from the BIO School Director of Employability (Dr. Janine Wilkinson), Director of Engagement (Dr. Anthony Blake) and the Faculty Professional Service (Jacob Millard)
 
