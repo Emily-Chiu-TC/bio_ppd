@@ -6,7 +6,8 @@ UEA BIO Student PPD Club
 
 ## Team (2023-2024)
 Student Project Lead: Emily Chiu (Year 2 Biomedicine)  
-Volunteers: Freddie Marlowe (Year 1 Biomedicine), Kyle Costello (Year 2 Molecular Biology and Genetics), Katie Farrow (Year 3 Biomedicine), David Serban (Year 3 Biomedicine) and alumni Stella Babatope (2023 MSc Molecular Medicine)
+Resource Team: Freddie Marlowe (Year 1 Biomedicine), Kyle Costello (Year 2 Molecular Biology and Genetics), Katie Farrow (Year 3 Biomedicine), David Serban (Year 3 Biomedicine)
+Event Volunteer: Alumni Stella Babatope (2023 MSc Molecular Medicine)
 with support from the BIO School Director of Employability (Dr. Janine Wilkinson), Director of Engagement (Dr. Anthony Blake) and the Faculty Professional Service (Jacob Millard)
 
 ## Introduction
@@ -28,4 +29,4 @@ This project was developed by a team of Undergraduate Biology Students, with a m
  ## Work in Progress
  * Development of Shiny Dashboard: combines Katie's animated graph with colour palette options, and acts as a meter for the marble guess
  
-Version: 4 July 2024 by Emily Chiu
+Version: 10 July 2024 by Emily Chiu
