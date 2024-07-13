@@ -13,12 +13,11 @@ library(gifski)
 
 # IMPORT DATA ----
 ## file - import data set - open data set - continue analysis 
-science_1 <- NSF_2024_raw
+science_1 <- read_csv("data/NSF_2024_raw.csv")
 head(science_1)
 
 ## Clean/rename variables ----
-science_1 <- dplyr::rename(science_1,
-                    'subject' = 'choice') # rename
+## science_1 <- dplyr::rename(science_1, 'subject' = 'choice') # rename
 colnames(science_1) # quickly check the new variable names (science_1)
 
 
@@ -35,7 +34,7 @@ science_plot <- science_1 %>%
   labs(x = "Subject",
        y = "Popularity",
        title = "Favorite science subject",
-       caption = "Data Detectives Norwich Science Festival 2024")+
+       caption = "Data Explorers Norwich Science Festival 2024")+
   theme(legend.position = "none", plot.margin=unit (c (0,1,1,1), 'cm'),
     axis.text.x = element_text(face = "bold", color = "black", size = 16, margin = margin(10, 10, 10, 10)),
     axis.text.y = element_text(face = "bold", color = "black", size = 16, margin = margin(10, 10, 10, 10)),
@@ -57,7 +56,7 @@ sci_plot_flip <- science_1 %>%
   labs(x = "Subject",
        y = "Popularity",
        title = "Favorite science subject",
-       caption = "Data Detectives Norwich Science Festival 2024")+
+       caption = "Data Explorers Norwich Science Festival 2024")+
   theme(
     legend.position = "none", plot.margin=unit (c (0,1,1,1), 'cm'),
     axis.text.x = element_text(face = "bold", color = "black", size = 16, margin = margin(10, 10, 10, 10)),
@@ -75,12 +74,24 @@ sci_plot_flip
 colorBlindness::cvdPlot(sci_plot_flip) 
 
 
-# Add the animation with gganimate - NOT WORKING
-science_2 <- n_fest_24_r 
+# Add the animation with gganimate - NOT USING----
+science_2 <- read_csv("data/n_fest_24_r.csv") 
 head(science_2)
+
+# clean
 science_2 <- janitor::clean_names(science_2) # turn all variables to lower-case (science_2)
 colnames(science_2)
 
+science_2 <- science_2 %>%
+  select(time, subject, vote)
+head(science_2)
+
+sum(is.na(science_2)) # check NA
+science_2 <- science_2 %>%
+  drop_na()
+view(science_2)
+
+# plot
 animated_plot <- ggplot(science_2,
                         aes(x = vote,
                             y = subject, fill = subject))+
@@ -92,7 +103,7 @@ animated_plot <- ggplot(science_2,
   labs(x = "Popularity",
         y = "Subject",
         title = "Favorite science subject",
-        caption = "Data Detectives Norwich Science Festival 2024")+
+        caption = "Data Explorers Norwich Science Festival 2024")+
   theme(
     legend.position = "none", plot.margin=unit (c (0,1,1,1), 'cm'),
     axis.text.x = element_text(face = "bold", color = "black", size = 16, margin = margin(10, 10, 10, 10)),
@@ -105,11 +116,10 @@ animated_plot <- ggplot(science_2,
   theme_classic()
 
 # Render the plot - gifski
-animate(animated_plot, duration = 20, height = 800, width = 800, res = 150)
+animate(animated_plot, duration = 15, 
+        height = 800, width = 800, res = 150)
 
 # ,renderer = gifski_renderer(fps = 5)
 # ,renderer = gifski_renderer(fps = 10)
 # Save the animation as a GIF
-anim_save("animate_graph.gif", animation = , height = 800, width = 800, res = 150)
-
-
+anim_save("outputs/animate_graph.gif", animation = , height = 800, width = 800, res = 150)
