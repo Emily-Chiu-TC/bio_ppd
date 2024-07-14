@@ -3,41 +3,32 @@
 
 # packages----
 library(shiny)
+library(bslib)
+library(tidyverse)
 
 # Define UI----
-ui <- fluidPage(
-
-    # Application title
-    titlePanel(""),
-
-    # Sidebar with a slider input for number of bins 
-    sidebarLayout(
-        sidebarPanel(
-            sliderInput("bins",
-                        "Number of bins:",
-                        min = 1,
-                        max = 50,
-                        value = 30)
-        ),
-
-        # Show a plot of the generated distribution
-        mainPanel(
-           plotOutput("distPlot")
-        )
-    )
+ui <- page_sidebar(
+  title = "title panel",
+  sidebar = sidebar("Sidebar",
+                    code(print("Hello"))),
+  value_box(
+    title = "Value box",
+    value = 100,
+    showcase = bsicons::bs_icon("bar-chart"),
+    theme = "teal"),
+  
+  
+  card(card_header("Card header"),
+       # card_image("www/shiny.svg", height = "300px"),
+       card_footer("Shiny is a product of Posit."),
+       "Card body"),
+  
+  
+  card("Card 2")
 )
 
 # Define server logic----
 server <- function(input, output) {
-
-    output$distPlot <- renderPlot({
-        # generate bins based on input$bins from ui.R
-        x    <- faithful[, 2]
-        bins <- seq(min(x), max(x), length.out = input$bins + 1)
-
-        # draw the histogram with the specified number of bins
-        hist(x, breaks = bins, col = 'darkgray', border = 'white')
-    })
 }
 
 # Run the application----
