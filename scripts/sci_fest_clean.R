@@ -13,12 +13,12 @@ library(gifski)
 
 # IMPORT DATA ----
 ## file - import data set - open data set - continue analysis 
-science_1 <- read_csv("data/NSF_2024_raw.csv")
-head(science_1)
+nsf1 <- read_csv("nsf_sub.csv")
+head(nsf1)
 
 ## Clean/rename variables ----
-## science_1 <- dplyr::rename(science_1, 'subject' = 'choice') # rename
-colnames(science_1) # quickly check the new variable names (science_1)
+## nsf1 <- dplyr::rename(nsf1, 'subject' = 'choice') # rename
+colnames(nsf1) # quickly check the new variable names (nsf1)
 
 
 # PLOTTING ----
@@ -26,7 +26,7 @@ colnames(science_1) # quickly check the new variable names (science_1)
 sub_colours <-c("steelblue3", "darkgoldenrod3", "darkorchid3")#R Colours
 
 ## PLOT 1 - BAR/vertical ----
-science_plot <- science_1 %>%
+science_plot <- nsf1 %>%
     ggplot(aes(x=subject))+
     geom_bar(fill = sub_colours, width = 0.8, colour = "black", position = "dodge")+
     scale_fill_manual(values = sub_colours)+
@@ -47,7 +47,7 @@ science_plot <- science_1 %>%
 science_plot
 
 ## PLOT 2 - BAR/horizontal----
-sci_plot_flip <- science_1 %>%
+sci_plot_flip <- nsf1 %>%
     ggplot(aes(x=subject))+
     geom_bar(fill = sub_colours, width = 0.8, size = 0.6)+
   
@@ -75,29 +75,29 @@ colorBlindness::cvdPlot(sci_plot_flip)
 
 
 # Add the animation with gganimate - NOT USING----
-science_2 <- read_csv("data/n_fest_24_r.csv") 
-head(science_2)
+nsf2 <- read_csv("nsf24_r.csv") 
+head(nsf2)
 
 # clean
-science_2 <- janitor::clean_names(science_2) # turn all variables to lower-case (science_2)
-colnames(science_2)
+nsf2 <- janitor::clean_names(nsf2) # turn all variables to lower-case (nsf2)
+colnames(nsf2)
 
-science_2 <- science_2 %>%
+nsf2 <- nsf2 %>%
   select(time, subject, vote)
-head(science_2)
+head(nsf2)
 
-sum(is.na(science_2)) # check NA
-science_2 <- science_2 %>%
+sum(is.na(nsf2)) # check NA
+nsf2 <- nsf2 %>%
   drop_na()
-view(science_2)
+view(nsf2)
 
 # plot
-animated_plot <- ggplot(science_2,
+animated_plot <- ggplot(nsf2,
                         aes(x = vote,
                             y = subject, fill = subject))+
   geom_col()+
   scale_fill_manual(values = sub_colours)+
-  scale_y_discrete(limits = rev(levels(science_2$subject)))+  # Reverse the order of the subjects
+  scale_y_discrete(limits = rev(levels(nsf2$subject)))+  # Reverse the order of the subjects
   transition_states(time) +  # Animate the graph over time
   ease_aes("linear", duration = 20)+  # Set a longer duration for each frame (linear)
   labs(x = "Popularity",
