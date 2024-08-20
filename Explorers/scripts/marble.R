@@ -7,7 +7,7 @@ library(janitor)
 library(lattice)
 
 # data
-marble <- read_csv("data/NSF_general.csv")
+marble <- read_csv("Explorers/data/NSF_general.csv")
 head(marble)
 
 # ANALYSIS----

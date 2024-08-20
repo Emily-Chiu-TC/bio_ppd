@@ -13,7 +13,7 @@ library(gifski)
 
 # IMPORT DATA ----
 ## file - import data set - open data set - continue analysis 
-nsf1 <- read_csv("nsf_sub.csv")
+nsf1 <- read_csv("Explorers/data/NSF_2024_raw.csv")
 head(nsf1)
 
 ## Clean/rename variables ----
