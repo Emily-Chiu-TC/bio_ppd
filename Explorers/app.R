@@ -8,6 +8,10 @@ library(tidyverse)
 library(RColorBrewer)
 library(colorBlindness)
 
+# scripts----
+source("scripts/marble.R")
+source("scripts/sci_fest_clean.R")
+
 # Define UI----
 ui <- page_sidebar(
   title = "BIO PPD: Data Explorers (2024)",

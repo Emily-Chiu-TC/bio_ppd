@@ -13,7 +13,7 @@ library(gifski)
 
 # IMPORT DATA ----
 ## file - import data set - open data set - continue analysis 
-nsf1 <- read_csv("Explorers/data/NSF_2024_raw.csv")
+nsf1 <- read_csv("data/NSF_2024_raw.csv")
 head(nsf1)
 
 ## Clean/rename variables ----
@@ -48,7 +48,7 @@ science_plot
 
 ## PLOT 2 - BAR/horizontal----
 sci_plot_flip <- nsf1 %>%
-    ggplot(aes(x=subject))+
+    ggplot(aes(x=choice))+
     geom_bar(fill = sub_colours, width = 0.8, size = 0.6)+
   
     theme_classic()+
@@ -75,7 +75,7 @@ colorBlindness::cvdPlot(sci_plot_flip)
 
 
 # Add the animation with gganimate - NOT USING----
-nsf2 <- read_csv("nsf24_r.csv") 
+nsf2 <- read_csv("data/n_fest_24_r.csv") 
 head(nsf2)
 
 # clean
