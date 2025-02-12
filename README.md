@@ -13,9 +13,8 @@ with support from the BIO School Director of Employability (Dr. Janine Wilkinson
 https://github.com/KFarrow11/Norwich_Science_festival_2024  
 
 ### 2024-2025  
-Staff: Jacob Millard,Dr. Philip Leftwich, Dr. Anthony Blake, Dr. Janine Wilkinson  
-Lead Students: Emily Chiu (BIO Student Employability and PPD Representative), Freddie Marlowe (Co-Lead), Katie Farrow (Co-Lead)  
-This continuation is now hosted on another Git repository: https://github.com/KFarrow11/norwich_science_festival_2025
+Staff: Jacob Millard, Dr. Philip Leftwich, Dr. Anthony Blake, Dr. Janine Wilkinson  
+This is now hosted on another Git repository: https://github.com/KFarrow11/norwich_science_festival_2025
 
 ## Introduction
 This project has been inspired by the second-year module BIO-5023Y Data Science for Biologists organised by Dr. Philip Leftwich. Data is everywhere. Larger amounts of data are being generated more frequently. In the current age of information, the ability to generate appropriate insights from datasets is becoming an increasingly more important transferrable skill. 
